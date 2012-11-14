@@ -15,7 +15,7 @@ public class FizzBuzz {
     }
 
     public String say(int number) {
-        if(number == 0) throw new IllegalArgumentException("0は不正な数値です。0以外の数値を入力してください。");
+        if(number <= 0) throw new IllegalArgumentException("0以下の数値は不正な数値です。0よりも大きな数値を入力してください。");
         if(isMultipleOfFifteen(number)) return "FizzBuzz";
         else if(isMultipleOfFive(number)) return "Buzz";
         else if(isMultipleOfThree(number)) return "Fizz";

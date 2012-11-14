@@ -10,6 +10,10 @@ public class FizzBuzz {
         return number% 3 == 0;
     }
 
+    private boolean isMultipleOfFifteen(int number) {
+        return isMultipleOfFive(number) && isMultipleOfThree(number);
+    }
+
     public String say(int number) {
         if(isMultipleOfFive(number) && isMultipleOfThree(number)) return "FizzBuzz";
         else if(isMultipleOfFive(number)) return "Buzz";

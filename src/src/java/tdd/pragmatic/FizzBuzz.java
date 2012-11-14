@@ -6,6 +6,10 @@ public class FizzBuzz {
         return number % 5 == 0;
     }
 
+    private boolean isMultipleOfThree(int number) {
+        return number% 3 == 0;
+    }
+
     public String say(int number) {
         if(isMultipleOfFive(number) && number % 3 == 0) return "FizzBuzz";
         else if(isMultipleOfFive(number)) return "Buzz";

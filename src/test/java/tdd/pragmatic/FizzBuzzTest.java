@@ -11,5 +11,11 @@ public class FizzBuzzTest {
         FizzBuzz fizzbuzz = new FizzBuzz();
         assertThat(fizzbuzz.say(3),is("Fizz"));
     }
+
+    @Test
+    public void 数値6を渡すとFizzが返ってくる() throws Exception {
+        FizzBuzz fizzbuzz = new FizzBuzz();
+        assertThat(fizzbuzz.say(6),is("Fizz"));
+    }
 }
 

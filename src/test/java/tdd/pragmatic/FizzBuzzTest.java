@@ -33,5 +33,10 @@ public class FizzBuzzTest {
     public void 数値15を渡すとFizzBuzzが返ってくる() throws Exception {
         assertThat(fizzBuzz.say(15),is("FizzBuzz"));
     }
+
+    @Test
+    public void 数値1を渡すと文字列1が返ってくる() throws Exception {
+        assertThat(fizzBuzz.say(1),is("1"));
+    }
 }
 

@@ -43,5 +43,10 @@ public class FizzBuzzTest {
     public void 数値0を渡すとIllegalArgumentExceptionが発生する() throws Exception {
         fizzBuzz.say(0);
     }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void 負の数を渡すとIllegalArgumentExceptionが発生する() throws Exception {
+        fizzBuzz.say(-1);
+    }
 }
 

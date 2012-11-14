@@ -1,10 +1,18 @@
 package tdd.pragmatic;
 
+import org.junit.Before;
 import org.junit.Test;
 import static org.junit.Assert.*;
 import static org.hamcrest.CoreMatchers.is;
 
 public class FizzBuzzTest {
+
+    private FizzBuzz fizzBuzz;
+
+    @Before
+    public void setUp() {
+        fizzBuzz = new FizzBuzz();
+    }
 
     @Test
     public void 数値3を渡すとFizzが返ってくる() throws Exception {

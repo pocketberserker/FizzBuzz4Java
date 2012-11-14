@@ -28,5 +28,10 @@ public class FizzBuzzTest {
     public void 数値5を渡すとBuzzが返ってくる() throws Exception {
         assertThat(fizzBuzz.say(5),is("Buzz"));
     }
+
+    @Test
+    public void 数値15を渡すとFizzBuzzが返ってくる() throws Exception {
+        assertThat(fizzBuzz.say(15),is("FizzBuzz"));
+    }
 }
 

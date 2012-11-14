@@ -15,7 +15,7 @@ public class FizzBuzz {
     }
 
     public String say(int number) {
-        if(isMultipleOfFive(number) && isMultipleOfThree(number)) return "FizzBuzz";
+        if(isMultipleOfFifteen(number)) return "FizzBuzz";
         else if(isMultipleOfFive(number)) return "Buzz";
         else return "Fizz";
     }

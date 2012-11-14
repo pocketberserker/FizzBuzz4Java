@@ -8,7 +8,7 @@ public class FizzBuzz {
 
     public String say(int number) {
         if(isMultipleOfFive(number) && number % 3 == 0) return "FizzBuzz";
-        else if(number % 5 == 0) return "Buzz";
+        else if(isMultipleOfFive(number)) return "Buzz";
         else return "Fizz";
     }
 }

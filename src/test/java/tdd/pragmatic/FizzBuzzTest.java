@@ -8,7 +8,7 @@ public class FizzBuzzTest {
 
     @Test
     public void 数値3を渡すとFizzが返ってくる() throws Exception {
-        FizzBuzz fizzbuzz = null;
+        FizzBuzz fizzbuzz = new FizzBuzz();
         assertThat(fizzbuzz.say(3),is("Fizz"));
     }
 }

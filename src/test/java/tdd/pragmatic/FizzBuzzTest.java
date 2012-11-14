@@ -12,3 +12,4 @@ public class FizzBuzzTest {
         assertThat(fizzbuzz.say(3),is("Fizz"));
     }
 }
+

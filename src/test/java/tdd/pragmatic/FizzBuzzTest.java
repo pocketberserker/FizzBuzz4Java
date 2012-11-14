@@ -38,5 +38,10 @@ public class FizzBuzzTest {
     public void 数値1を渡すと文字列1が返ってくる() throws Exception {
         assertThat(fizzBuzz.say(1),is("1"));
     }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void 数値0を渡すとIllegalArgumentExceptionが発生する() throws Exception {
+        fizzBuzz.say(0);
+    }
 }
 

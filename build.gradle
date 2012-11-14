@@ -1,0 +1,21 @@
+apply plugin: 'java'
+
+defaultTasks 'clean','build', 'test'
+
+def jdkVersion = 1.7
+def enc = 'UTF-8'
+
+sourceCompatibility = jdkVersion
+targetCompatibility = jdkVersion
+
+[compileJava,compileTestJava].each{ it.options.encoding = enc }
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit-dep', version: '4.10'
+    testCompile group: 'org.hamcrest', name: 'hamcrest-library', version: '1.3'
+}
+
